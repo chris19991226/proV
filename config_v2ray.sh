@@ -44,7 +44,7 @@ echo
 echo "安装已经完成，开启了kcp和tcp两种模式，客户端可任意选择对应的配置"
 echo 
 echo "===========KCP配置============="
-echo "地址：${serverip}"
+echo "地址：$(serverip)"
 echo "端口：${port}"
 echo "uuid：${kcpuuid}"
 echo "额外id：64"
@@ -54,7 +54,7 @@ echo "别名：mykcp"
 echo "伪装类型：srtp"
 echo 
 echo "===========TCP配置============="
-echo "地址：${serverip}"
+echo "地址：$(serverip)"
 echo "端口：${port}"
 echo "uuid：${tcpuuid}"
 echo "额外id：64"
