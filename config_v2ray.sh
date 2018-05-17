@@ -25,7 +25,7 @@ cd /etc/v2ray/
 rm -f config.json
 
 #下载kcp+tcp配置文件，kcp（srtp混淆），tcp（http混淆）
-wget https://raw.githubusercontent.com/yobabyshark/ssr/master/config.json
+wget https://raw.githubusercontent.com/yobabyshark/proV/master/config.json
 
 #生成并替换uuid，kcp、tcp各一个
 kcpuuid=$(cat /proc/sys/kernel/random/uuid)
