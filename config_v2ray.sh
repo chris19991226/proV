@@ -37,8 +37,7 @@ port=$(rand 10000 30000)
 sed -i "s/11234/$port/" config.json
 
 #输出配置到文件
-myconfig(){
-    cat > /etc/v2ray/myconfig.json<<-EOF
+cat > /etc/v2ray/myconfig.json<<-EOF
 {
 "===========KCP配置============="
 "地址：${serverip}"
@@ -62,7 +61,7 @@ myconfig(){
 "伪装域名：bing.com,cloudflare.com,ajax.microsoft.com"
 }
 EOF
-}
+
 
 #输出配置信息
 clear
