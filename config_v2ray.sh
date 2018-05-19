@@ -39,26 +39,26 @@ sed -i "s/11234/$port/" config.json
 #输出配置到文件
 cat > /etc/v2ray/myconfig.json<<-EOF
 {
-"===========KCP配置============="
-"地址：${serverip}"
-"端口：${port}"
-"uuid：${kcpuuid}"
-"额外id：64"
-"加密方式：aes-128-gcm"
-"传输协议：kcp"
-"别名：mykcp"
-"伪装类型：srtp"
+===========KCP配置=============
+地址：${serverip}
+端口：${port}
+uuid：${kcpuuid}
+额外id：64
+加密方式：aes-128-gcm
+传输协议：kcp
+别名：mykcp
+伪装类型：srtp
 
-"===========TCP配置============="
-"地址：${serverip}"
-"端口：${port}"
-"uuid：${tcpuuid}"
-"额外id：64"
-"加密方式：aes-128-gcm"
-"传输协议：tcp"
-"别名：mytcp"
-"伪装类型：http"
-"伪装域名：bing.com,cloudflare.com,ajax.microsoft.com"
+===========TCP配置=============
+地址：${serverip}
+端口：${port}
+uuid：${tcpuuid}
+额外id：64
+加密方式：aes-128-gcm
+传输协议：tcp
+别名：mytcp
+伪装类型：http
+伪装域名：bing.com,cloudflare.com,ajax.microsoft.com
 }
 EOF
 
