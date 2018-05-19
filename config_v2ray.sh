@@ -39,7 +39,7 @@ port=$(rand 10000 30000)
 sed -i "s/11234/$port/" config.json
 
 #重启prov
-service v2ray restart
+systemctl restart v2ray.service
 
 #输出配置到文件
 cat > /etc/v2ray/myconfig.json<<-EOF
