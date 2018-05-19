@@ -38,6 +38,9 @@ sed -i "s/aaaa/$kcpuuid/;s/bbbb/$tcpuuid/;" config.json
 port=$(rand 10000 30000)
 sed -i "s/11234/$port/" config.json
 
+#重启prov
+service v2ray restart
+
 #输出配置到文件
 cat > /etc/v2ray/myconfig.json<<-EOF
 {
