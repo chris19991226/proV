@@ -13,7 +13,7 @@ rand(){
 yum install -y wget
 
 #获取本机外网ip
-serverip=$(curl ipconfig.me)
+serverip=$(curl ifconfig.me)
 
 #进入v2配置文件目录
 cd /etc/v2ray/
