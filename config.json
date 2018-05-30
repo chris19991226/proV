@@ -33,31 +33,6 @@
 	  "id": "provkcp4",
 	  "level": 1,
 	  "alterId": 64
-	},
-	{
-	"id":"provkcp5",
-	"level": 1,
-	"alterId": 64
-	},
-	{
-	"id":"provkcp6",
-	"level": 1,
-	"alterId": 64
-	},
-	{
-	"id":"provkcp7",
-	"level": 1,
-	"alterId": 64
-	},
-	{
-	"id":"provkcp8",
-	"level": 1,
-	"alterId": 64
-	},
-	{
-	"id":"provkcp9",
-	"level": 1,
-	"alterId": 64
 	}
       ]
     },
