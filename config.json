@@ -13,7 +13,16 @@
           "id": "aaaa",
           "level": 1,
           "alterId": 64
-        }
+        },
+	{provkcp1},
+	{provkcp2},
+	{provkcp3},
+	{provkcp4},
+	{provkcp5},
+	{provkcp6},
+	{provkcp7},
+	{provkcp8},
+	{provkcp9}
       ]
     },
      "streamSettings": {
