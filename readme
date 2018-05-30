@@ -1,2 +1,6 @@
-因为是小白教程，所以目前只保证在搬瓦工centos7 bbr下可以使用
-目前配置了kcp和tcp两种模式，vmess
+目前只保证在搬瓦工centos7 bbr下可以使用。
+目前配置了kcp和tcp两种模式，vmess协议。
+
+config_v2ray.sh：一键安装服务端的脚本，使用配置文件config.json。
+config.json：配合脚本使用的配置文件，内置两套方案，TCP、KCP，方便修改UUID和端口。
+prov4bwh.rar：Windows端的便捷程序，可以在只拥有搬瓦工veid和apikey时，一键重装系统、一键安装服务端、集成了64位prov客户端。目前支持win7以上64位系统，兼容性待测试。
