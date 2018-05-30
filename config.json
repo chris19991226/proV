@@ -14,15 +14,15 @@
           "level": 1,
           "alterId": 64
         },
-	{provkcp1},
-	{provkcp2},
-	{provkcp3},
-	{provkcp4},
-	{provkcp5},
-	{provkcp6},
-	{provkcp7},
-	{provkcp8},
-	{provkcp9}
+	{"provkcp1"},
+	{"provkcp2"},
+	{"provkcp3"},
+	{"provkcp4"},
+	{"provkcp5"},
+	{"provkcp6"},
+	{"provkcp7"},
+	{"provkcp8"},
+	{"provkcp9"}
       ]
     },
      "streamSettings": {
@@ -52,15 +52,15 @@
           "level": 1,
           "alterId": 64
         },
-	{provtcp1},
-	{provtcp2},
-	{provtcp3},
-	{provtcp4},
-	{provtcp5},
-	{provtcp6},
-	{provtcp7},
-	{provtcp8},
-	{provtcp9}
+	{"provtcp1"},
+	{"provtcp2"},
+	{"provtcp3"},
+	{"provtcp4"},
+	{"provtcp5"},
+	{"provtcp6"},
+	{"provtcp7"},
+	{"provtcp8"},
+	{"provtcp9"}
      ]
     },
 	"streamSettings": {
