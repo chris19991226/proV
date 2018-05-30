@@ -13,27 +13,7 @@
           "id": "aaaa",
           "level": 1,
           "alterId": 64
-        },
-	{
-	  "id": "provkcp1",
-	  "level": 1,
-	  "alterId": 64
-	},
-	{
-	  "id": "provkcp2",
-	  "level": 1,
-	  "alterId": 64
-	},
-	{
-	  "id": "provkcp3",
-	  "level": 1,
-	  "alterId": 64
-	},
-	{
-	  "id": "provkcp4",
-	  "level": 1,
-	  "alterId": 64
-	}
+        }
       ]
     },
      "streamSettings": {
