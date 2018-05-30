@@ -16,18 +16,18 @@
         },
 	{
 	"id":"provkcp1",
-	"level":1,
-	"alterId":64
+	"level": 1,
+	"alterId": 64
 	},
 	{
 	"id":"provkcp2",
-	"level":1,
-	"alterId":64
+	"level": 1,
+	"alterId": 64
 	},
 	{
 	"id":"provkcp3",
-	"level":1,
-	"alterId":64
+	"level": 1,
+	"alterId": 64
 	},
 	{
 	"id":"provkcp4",
@@ -36,28 +36,28 @@
 	},
 	{
 	"id":"provkcp5",
-	"level":1,
-	"alterId":64
+	"level": 1,
+	"alterId": 64
 	},
 	{
 	"id":"provkcp6",
-	"level":1,
-	"alterId":64
+	"level": 1,
+	"alterId": 64
 	},
 	{
 	"id":"provkcp7",
-	"level":1,
-	"alterId":64
+	"level": 1,
+	"alterId": 64
 	},
 	{
 	"id":"provkcp8",
-	"level":1,
-	"alterId":64
+	"level": 1,
+	"alterId": 64
 	},
 	{
 	"id":"provkcp9",
-	"level":1,
-	"alterId":64
+	"level": 1,
+	"alterId": 64
 	}
       ]
     },
@@ -87,52 +87,7 @@
           "id": "bbbb",
           "level": 1,
           "alterId": 64
-        },
-	{
-	"id":"provtcp1",
-	"level":1,
-	"alterId":64
-	},
-	{
-	"id":"provtcp2",
-	"level":1,
-	"alterId":64
-	},
-	{
-	"id":"provtcp3",
-	"level":1,
-	"alterId":64
-	},
-	{
-	"id":"provtcp4",
-	"level":1,
-	"alterId":64
-	},
-	{
-	"id":"provtcp5",
-	"level":1,
-	"alterId":64
-	},
-	{
-	"id":"provtcp6",
-	"level":1,
-	"alterId":64
-	},
-	{
-	"id":"provtcp7",
-	"level":1,
-	"alterId":64
-	},
-	{
-	"id":"provtcp8",
-	"level":1,
-	"alterId":64
-	},
-	{
-	"id":"provtcp9",
-	"level":1,
-	"alterId":64
-	}
+        }
      ]
     },
 	"streamSettings": {
