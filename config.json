@@ -51,7 +51,16 @@
           "id": "bbbb",
           "level": 1,
           "alterId": 64
-        }
+        },
+	{provtcp1},
+	{provtcp2},
+	{provtcp3},
+	{provtcp4},
+	{provtcp5},
+	{provtcp6},
+	{provtcp7},
+	{provtcp8},
+	{provtcp9}
      ]
     },
 	"streamSettings": {
