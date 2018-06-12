@@ -1,5 +1,8 @@
 #!/bin/bash
 
+systemctl stop firewalld
+systemctl disable firewalld
+
 #安装v2
 bash <(curl -L -s https://install.direct/go.sh)
 
