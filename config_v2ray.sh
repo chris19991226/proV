@@ -50,7 +50,7 @@ uuid：${kcpuuid}
 加密方式：aes-128-gcm
 传输协议：kcp
 别名：mykcp
-伪装类型：none
+伪装类型：srtp
 
 ===========TCP配置=============
 地址：${serverip}
@@ -79,7 +79,7 @@ echo "额外id：64"
 echo "加密方式：aes-128-gcm"
 echo "传输协议：kcp"
 echo "别名：mykcp"
-echo "伪装类型：none"
+echo "伪装类型：srtp"
 echo 
 echo "===========TCP配置============="
 echo "地址：${serverip}"
