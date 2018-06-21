@@ -28,7 +28,7 @@
         "readBufferSize": 1,
         "writeBufferSize": 1,
         "header": {
-          "type": "none"
+          "type": "srtp"
         }
       }
     }
