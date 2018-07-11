@@ -61,7 +61,7 @@ uuid：${tcpuuid}
 传输协议：tcp
 别名：mytcp
 伪装类型：http
-伪装域名：bing.com,cloudflare.com,ajax.microsoft.com
+伪装域名：bing.com
 }
 EOF
 
