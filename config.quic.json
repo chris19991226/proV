@@ -18,13 +18,16 @@
         }
       ]
     },
-     "quicSettings": {
+     "streamSettings": {
+        "network": "quic",
+        "quicSettings": {
         "security": "aes-128-gcm",
         "key": "quickey",
         "header": {
             "type": "srtp"
         }
-     }
+       }
+      }
   },
   "outbound": {
     "protocol": "freedom",
