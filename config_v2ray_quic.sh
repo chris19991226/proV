@@ -48,9 +48,9 @@ cat > /etc/v2ray/myconfig.json<<-EOF
 uuid：${kcpuuid}
 额外id：64
 加密方式：aes-128-gcm
-传输协议：kcp
-别名：mykcp
-伪装类型：srtp
+传输协议：quic
+别名：myquic
+伪装类型：无
 }
 EOF
 
@@ -59,3 +59,13 @@ EOF
 clear
 echo
 echo "安装已经完成，开启了quic模式"
+echo "===========KCP配置============="
+echo "地址：${serverip}"
+echo "端口：${port}"
+echo "uuid：${kcpuuid}"
+echo "额外id：64"
+echo "加密方式：aes-128-gcm"
+echo "传输协议：quic"
+echo "别名：myquic"
+echo "伪装类型：无"
+echo 
