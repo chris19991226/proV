@@ -22,10 +22,10 @@
         "network": "quic",
 	"security": "none",
         "quicSettings": {
-        "security": "aes-128-gcm",
-        "key": "quickey",
+        "security": "none",
+        "key": "",
         "header": {
-            "type": "srtp"
+            "type": "none"
         }
        }
       }
