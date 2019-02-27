@@ -33,7 +33,7 @@ tcpuuid=$(cat /proc/sys/kernel/random/uuid)
 sed -i "s/aaaa/$kcpuuid/;s/bbbb/$tcpuuid/;" config.json
 
 #生成并修改端口
-port=$(rand 10000 30000)
+port=$(rand 10000 60000)
 sed -i "s/11234/$port/" config.json
 
 #重启prov
@@ -50,7 +50,7 @@ uuid：${kcpuuid}
 加密方式：aes-128-gcm
 传输协议：kcp
 别名：mykcp
-伪装类型：srtp
+伪装类型：none
 
 ===========TCP配置=============
 地址：${serverip}
@@ -60,8 +60,7 @@ uuid：${tcpuuid}
 加密方式：aes-128-gcm
 传输协议：tcp
 别名：mytcp
-伪装类型：http
-伪装域名：bing.com
+伪装类型：none
 }
 EOF
 
@@ -79,7 +78,7 @@ echo "额外id：64"
 echo "加密方式：aes-128-gcm"
 echo "传输协议：kcp"
 echo "别名：mykcp"
-echo "伪装类型：srtp"
+echo "伪装类型：none"
 echo 
 echo "===========TCP配置============="
 echo "地址：${serverip}"
@@ -89,8 +88,7 @@ echo "额外id：64"
 echo "加密方式：aes-128-gcm"
 echo "传输协议：tcp"
 echo "别名：mytcp"
-echo "伪装类型：http"
-echo "伪装域名：bing.com"
+echo "伪装类型：none"
 echo
 
 
