@@ -43,7 +43,7 @@ cat > /etc/v2ray/config.json<<-EOF
      "streamSettings": {
      "network": "mkcp",
      "kcpSettings": {
-        "mtu": 1420,
+        "mtu": 1350,
         "tti": 10,
         "uplinkCapacity":10,
         "downlinkCapacity": 100,
