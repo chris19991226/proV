@@ -2,7 +2,8 @@
 
 systemctl stop firewalld
 systemctl disable firewalld
-
+systemctl stop ufw
+systemctl disable ufw
 #安装v2
 bash <(curl -L -s https://install.direct/go.sh)
 
@@ -13,19 +14,78 @@ rand(){
     num=$(cat /dev/urandom | head -n 10 | cksum | awk -F ' ' '{print $1}')
     echo $(($num%$max+$min))  
 }
-yum install -y wget
 
 #获取本机外网ip
-serverip=$(curl icanhazip.com)
+serverip=$(curl ipv4.icanhazip.com)
+cd /etc/v2ray
+rm -f /etc/v2ray/config.json
 
-#进入v2配置文件目录
-cd /etc/v2ray/
-
-#删除原有v2配置文件
-rm -f config.json
-
-#下载kcp+tcp配置文件，kcp（srtp混淆），tcp（http混淆）
-wget https://raw.githubusercontent.com/yobabyshark/proV/master/config.json
+cat > /etc/v2ray/config.json<<-EOF
+{
+  "log" : {
+    "access": "/var/log/v2ray/access.log",
+    "error": "/var/log/v2ray/error.log",
+    "loglevel": "warning"
+  },
+  "inbound": {
+    "port": 11234,
+    "protocol": "vmess",
+    "settings": {
+      "clients": [
+        {
+          "id": "aaaa",
+          "level": 1,
+          "alterId": 64,
+	  "email": "akcp1234@gmail.com"
+        }
+      ]
+    },
+     "streamSettings": {
+     "network": "mkcp",
+     "kcpSettings": {
+        "mtu": 1420,
+        "tti": 10,
+        "uplinkCapacity":10,
+        "downlinkCapacity": 100,
+        "congestion": true,
+        "readBufferSize": 2,
+        "writeBufferSize": 2,
+        "header": {
+          "type": "none"
+        }
+      }
+    }
+  },
+  "inboundDetour": [            
+  {
+    "port": 11234,
+    "protocol": "vmess",
+    "settings": {
+       "clients": [
+        {
+          "id": "bbbb",
+          "level": 1,
+          "alterId": 64,
+	        "email": "atcp1234@gmail.com"	
+        }
+     ]
+    },
+	"streamSettings": {
+      "network": "tcp",
+      "tcpSettings": {
+        "header": { 
+          "type": "none"
+        }
+      }
+    }
+  }
+ ],
+  "outbound": {
+    "protocol": "freedom",
+    "settings": {}
+  }
+}
+EOF
 
 #生成并替换uuid，kcp、tcp各一个
 kcpuuid=$(cat /proc/sys/kernel/random/uuid)
