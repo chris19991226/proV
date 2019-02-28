@@ -47,7 +47,7 @@ cat > /etc/v2ray/config.json<<-EOF
         "tti": 10,
         "uplinkCapacity":10,
         "downlinkCapacity": 100,
-        "congestion": true,
+        "congestion": false,
         "readBufferSize": 2,
         "writeBufferSize": 2,
         "header": {
