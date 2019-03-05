@@ -44,7 +44,7 @@ cat > /etc/v2ray/config.json<<-EOF
      "network": "mkcp",
      "kcpSettings": {
         "mtu": 1350,
-        "tti": 10,
+        "tti": 20,
         "uplinkCapacity":10,
         "downlinkCapacity": 100,
         "congestion": false,
